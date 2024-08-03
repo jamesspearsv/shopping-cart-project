@@ -21,6 +21,8 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
 - [ ] FakeStoreAPI Module
   - [ ] Retrieve items from API
   - [ ] Parse items from API
+- [ ] Store Filters
+  - [ ] Limit visable items in store by category
 
 ### Pages / Routes
 

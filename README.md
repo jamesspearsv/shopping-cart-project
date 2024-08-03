@@ -33,12 +33,13 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
 ### Components
 
 - [ ] ItemCard
-  - [ ] InStore -- should include quantity selection elements and logic to add item to cart
+  - [ ] InStore -- should include, price, quantity selection elements, and logic to add item to cart
   - [ ] InCart -- should display selected quantity in cart, unit cost, total cost, and logic to edit item in cart (update quantiy and remove from cart)
 - [ ] NavBar
   - [ ] NavLinks
   - [ ] CartPreview
 - [ ] Layout
+- [ ] ItemDetails -- dialog box that should show item description, cost, category, and logic to select quantity and add to cart
 
 ## Style Guide
 

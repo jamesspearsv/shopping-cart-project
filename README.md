@@ -11,6 +11,22 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
 
 ## To-Do
 
+### Planning & Design
+
+ - [X] Style Guide
+   - [x] Color
+   - [x] Type
+   - [x] Spacing
+ - [ ] Design Files
+    - [ ] Layout
+    - [ ] Nav
+    - [ ] ItemCards
+    - [ ] CartPreview
+    - [ ] ItemDetails
+    - [ ] Store Page
+    - [ ] Home Page
+    - [ ] Cart Page
+
 ### Logic
 
 - [ ] Shopping Cart
@@ -40,35 +56,3 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
   - [ ] CartPreview
 - [ ] Layout
 - [ ] ItemDetails -- dialog box that should show item description, cost, category, and logic to select quantity and add to cart
-
-## Style Guide
-
-### Typography
-
-**Fonts**
-
-- Headings : {font-face}
-- Body : {font-face}
-
-**Font Sizes**
-
-- h1 : {font-size}
-- h2 : {font-size}
-- h3 : {font-size}
-- h4 : {font-size}
-
-- body-normal : {font-size}
-- body-small : {font-size}
-
-### Colors
-
-- Primary : {hex} , {rgb}
-- Secondary : {hex} , {rgb}
-- Accent : {hex} , {rgb}
-
-### Spacing
-
-- Heading Margin : {size}
-- Body Margin : {size}
-- Padding : {size}
-- Border-radius : {size}

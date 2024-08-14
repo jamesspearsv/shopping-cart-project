@@ -18,8 +18,7 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
    - [x] Type
    - [x] Spacing
  - [ ] Design Files
-    - [ ] Layout
-    - [ ] Nav
+    - [x] Nav
     - [ ] ItemCards
     - [ ] CartPreview
     - [ ] ItemDetails

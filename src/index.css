@@ -24,6 +24,10 @@ body {
   color: var(--color-dark);
 }
 
+#root {
+  height: 5000px;
+}
+
 body,
 h1,
 h2,
@@ -47,16 +51,19 @@ h4 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 1.9rem;
 }
+
 h2 {
-  font-size: 2rem;
-}
-h3 {
   font-size: 1.7rem;
 }
+
+h3 {
+  font-size: 1.4rem;
+}
+
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 ol,
@@ -69,6 +76,22 @@ img {
   height: auto;
 }
 
-.body-small {
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+a.active {
+  color: var(--color-primary);
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bodySmall {
   font-size: 0.75rem;
 }

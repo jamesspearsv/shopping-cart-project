@@ -1,6 +1,7 @@
-import { json, Outlet } from 'react-router-dom';
-import './App.css';
 import { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import Nav from './components/Nav';
+import './App.css';
 
 function App() {
   const [cart, setCart] = useState(
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+      <Nav />
       <main>
         <Outlet context={[cart, setCart]} />
       </main>

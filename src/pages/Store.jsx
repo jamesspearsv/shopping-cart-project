@@ -1,4 +1,4 @@
-import { useOutletContext, Link } from 'react-router-dom';
+import { useOutletContext } from 'react-router-dom';
 
 function Store() {
   const [cart, setCart] = useOutletContext();
@@ -11,7 +11,6 @@ function Store() {
 
   return (
     <div>
-      <Link to='/'>Home</Link>
       {cart.map((item, index) => {
         return <p key={index}>{item}</p>;
       })}

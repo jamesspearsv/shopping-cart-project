@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Hind', sans-serif;
+  --font-size: 18px;
+  --color-primary: #2d6e41;
+  --color-secondary: #2d3a6e;
+  --color--light: #f0f5f5;
+  --color-dark: #051319;
+  --color-accent: #bfbfbf;
+  --radius-rectangle: 10px;
+  --radius-circle: 50px;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color--light);
+  color: var(--color-dark);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.body-small {
+  font-size: 0.75rem;
+}

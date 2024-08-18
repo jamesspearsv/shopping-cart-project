@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Hind', sans-serif;
+  --font-size: 18px;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-body);
+}

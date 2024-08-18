@@ -13,19 +13,19 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
 
 ### Planning & Design
 
- - [X] Style Guide
-   - [x] Color
-   - [x] Type
-   - [x] Spacing
- - [ ] Design Files
-    - [x] Nav
-    - [x] ItemCards
-    - [x] CartPreview
-    - [x] Store filters
-    - [ ] ItemDetails
-    - [x] Store Page
-    - [ ] Home Page
-    - [ ] Cart Page
+- [x] Style Guide
+  - [x] Color
+  - [x] Type
+  - [x] Spacing
+- [ ] Design Files
+  - [x] Nav
+  - [x] ItemCards
+  - [x] CartPreview
+  - [x] Store filters
+  - [ ] ItemDetails
+  - [x] Store Page
+  - [ ] Home Page
+  - [ ] Cart Page
 
 ### Logic
 
@@ -34,6 +34,7 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
   - [ ] Add items to cart
   - [ ] Change quantity of item when in cart
   - [ ] Remove items from cart
+  - [x] Store cart in local storage
 - [ ] FakeStoreAPI Module
   - [ ] Retrieve items from API
   - [ ] Parse items from API
@@ -52,6 +53,6 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
   - [ ] InStore -- should include, price, add to cart button
   - [ ] InCart -- should display selected quantity in cart, buttons to increase of decrease quantity in cart
 - [ ] NavBar
-- [ ] CartPreview 
+- [ ] CartPreview
 - [ ] Layout
 - [ ] ItemDetails -- dialog box that should show item description, cost, category, and logic to select quantity and add to cart

@@ -20,9 +20,10 @@
 ## Colors
 
 - Primary : #2D6E41 / (45, 110, 65)
-- Accent : #2D3A6E / (45, 58, 110)
+- Secondary : #2D3A6E / (45, 58, 110)
 - Light : #F0F5F5 / (240, 245, 245)
 - Dark : #051319 / (5, 19, 25)
+- Accent: #BFBFBF / (191, 191, 191)
 
 ## Spacing
 

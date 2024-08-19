@@ -6,10 +6,10 @@
   --font-size: 18px;
   --color-primary: #2d6e41;
   --color-secondary: #2d3a6e;
-  --color--light: #f0f5f5;
+  --color-light: #f0f5f5;
   --color-dark: #051319;
   --color-accent: #bfbfbf;
-  --radius-rectangle: 10px;
+  --radius-rectangle: 5px;
   --radius-circle: 50px;
   --nav-height: 75px;
   --breakpoint: 500px;
@@ -22,8 +22,12 @@ html {
 }
 
 body {
-  background-color: var(--color--light);
+  background-color: var(--color-light);
   color: var(--color-dark);
+}
+
+#root {
+  height: 5000px;
 }
 
 body,

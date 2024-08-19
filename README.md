@@ -52,7 +52,6 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
 - [ ] ItemCard
   - [ ] InStore -- should include, price, add to cart button
   - [ ] InCart -- should display selected quantity in cart, buttons to increase of decrease quantity in cart
-- [ ] NavBar
+- [x] NavBar
 - [ ] CartPreview
-- [ ] Layout
 - [ ] ItemDetails -- dialog box that should show item description, cost, category, and logic to select quantity and add to cart

@@ -8,6 +8,7 @@ function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // useEffect to monitor scroll position
   useEffect(() => {
     // handle scroll
     function handleScroll() {
@@ -23,35 +24,34 @@ function Nav() {
     };
   }, [scroll]);
 
-  function handleMenuOpen() {
+  // Toggle menuOpen state
+  function handleMenuToggle() {
     setMenuOpen((menuOpen) => !menuOpen);
   }
 
   return (
     <nav className={scrolled ? `${styles.nav} ${styles.scrolled}` : styles.nav}>
       <div className={styles.mobileMenu}>
-        <button onClick={handleMenuOpen}>
-          <div
-            style={
-              menuOpen
-                ? {
-                    transform: `rotate(45deg)`,
-                  }
-                : {}
-            }
-          >
-            +
-          </div>
+        <button
+          onClick={handleMenuToggle}
+          className={styles.mobileToggle}
+          style={menuOpen ? { transform: `rotate(45deg)` } : {}}
+        >
+          <div>+</div>
         </button>
         <CartButton />
       </div>
       <div className={menuOpen ? `${styles.menu} ${styles.open}` : styles.menu}>
         <ul>
           <li>
-            <NavLink to='/'>Home</NavLink>
+            <NavLink to="/" onClick={handleMenuToggle}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to='/store'>Store</NavLink>
+            <NavLink to="/store" onClick={handleMenuToggle}>
+              Store
+            </NavLink>
           </li>
         </ul>
         <CartButton desktop />

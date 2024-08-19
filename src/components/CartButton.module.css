@@ -1,5 +1,20 @@
+.button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-rectangle);
+  padding: 0.5rem;
+}
+
+.button svg {
+  color: var(--color-light);
+}
+
 .desktop {
   margin-left: auto;
+}
+
+.desktop:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 500px) {

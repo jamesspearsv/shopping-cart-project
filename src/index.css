@@ -26,10 +26,6 @@ body {
   color: var(--color-dark);
 }
 
-#root {
-  height: 5000px;
-}
-
 body,
 h1,
 h2,

@@ -11,6 +11,8 @@
   --color-accent: #bfbfbf;
   --radius-rectangle: 10px;
   --radius-circle: 50px;
+  --nav-height: 75px;
+  --breakpoint: 500px;
 }
 
 html {
@@ -22,10 +24,6 @@ html {
 body {
   background-color: var(--color--light);
   color: var(--color-dark);
-}
-
-#root {
-  height: 5000px;
 }
 
 body,

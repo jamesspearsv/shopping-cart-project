@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.css';
-import { Basket } from '../assets/Basket.jsx';
-import Button from './Button.jsx';
+import CartButton from './CartButton.jsx';
 
 function Nav() {
   const [scroll, setScroll] = useState(window.scrollY);
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     // handle scroll
@@ -23,17 +23,39 @@ function Nav() {
     };
   }, [scroll]);
 
+  function handleMenuOpen() {
+    setMenuOpen((menuOpen) => !menuOpen);
+  }
+
   return (
     <nav className={scrolled ? `${styles.nav} ${styles.scrolled}` : styles.nav}>
-      <ul className='flexRow'>
-        <li>
-          <NavLink to='/'>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to='/store'>Store</NavLink>
-        </li>
-      </ul>
-      <button>{Basket}</button>
+      <div className={styles.mobileMenu}>
+        <button onClick={handleMenuOpen}>
+          <div
+            style={
+              menuOpen
+                ? {
+                    transform: `rotate(45deg)`,
+                  }
+                : {}
+            }
+          >
+            +
+          </div>
+        </button>
+        <CartButton />
+      </div>
+      <div className={menuOpen ? `${styles.menu} ${styles.open}` : styles.menu}>
+        <ul>
+          <li>
+            <NavLink to='/'>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to='/store'>Store</NavLink>
+          </li>
+        </ul>
+        <CartButton desktop />
+      </div>
     </nav>
   );
 }

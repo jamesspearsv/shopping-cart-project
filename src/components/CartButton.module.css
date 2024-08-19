@@ -1,0 +1,9 @@
+.desktop {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+}

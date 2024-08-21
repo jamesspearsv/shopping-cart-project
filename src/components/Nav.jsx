@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.css';
 import CartButton from './CartButton.jsx';
 
-function Nav() {
+function Nav({ cart }) {
   const [scroll, setScroll] = useState(window.scrollY);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +39,6 @@ function Nav() {
         >
           <div>+</div>
         </button>
-        <CartButton />
       </div>
       <div className={menuOpen ? `${styles.menu} ${styles.open}` : styles.menu}>
         <ul>
@@ -54,8 +53,8 @@ function Nav() {
             </NavLink>
           </li>
         </ul>
-        <CartButton desktop />
       </div>
+      <CartButton cart={cart} />
     </nav>
   );
 }

@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Nav />
+      <Nav cart={cart} />
       <main>
         <Outlet context={[cart, setCart]} />
       </main>

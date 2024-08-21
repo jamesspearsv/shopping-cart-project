@@ -44,7 +44,7 @@ function Store() {
     >
       <div
         style={{
-          minWidth: '10%',
+          minWidth: '20%',
         }}
       >
         Filters

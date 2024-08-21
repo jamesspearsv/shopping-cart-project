@@ -2,11 +2,33 @@
   background-color: var(--color-primary);
   border: none;
   border-radius: var(--radius-rectangle);
-  padding: 0.5rem;
+  padding: 0.6rem;
+  position: relative;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.button span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -8px;
+  margin-right: -8px;
+  padding: 1px;
+  background-color: red;
+  color: var(--color-light);
+  width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-circle);
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button svg {
   color: var(--color-light);
+  transform: scale(1.2);
 }
 
 .desktop {

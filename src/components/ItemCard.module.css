@@ -1,5 +1,6 @@
 .card {
   width: 20%;
+  min-width: 200px;
   padding: 1rem;
   background-color: white;
   border: solid 1px var(--color-accent);
@@ -49,8 +50,9 @@
   border: none;
   border-radius: var(--radius-circle);
   padding: 0.5rem;
-  width: 35px;
+  width: 40px;
   aspect-ratio: 1/1;
+  font-size: 1.1rem;
 }
 
 .quantity {
@@ -58,8 +60,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-light);
+  border: none;
+  border-radius: var(--radius-rectangle);
+  padding: 8px;
 }
 
 .quantityLabel {
   font-size: var(--font-small);
+  text-align: center;
 }

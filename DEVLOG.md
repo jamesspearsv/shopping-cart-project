@@ -26,5 +26,15 @@ Built out item cards and integrated cart functions
 
 - Implemented styling for item cards
 - Implemented ability to add to, remove from, and change quantity of items in cart
+- Implemented minor style change to item cards to prevent line breaks below 200px in width
+
+**Next Steps:** Build out filtering ability for store page
+
+## 8/21/2024
+
+Added total items in cart counter to cart button in navigation
+
+- Implemented state mangagement for total items count
+- Used useEffect to update total items count each time the cart was updated
 
 **Next Steps:** Build out filtering ability for store page

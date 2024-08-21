@@ -34,24 +34,30 @@ function Store() {
     })();
   }, []);
 
-  if (loading) {
-    return 'loading...';
-  } else {
-    return (
-      <section
+  return (
+    <section
+      style={{
+        display: 'flex',
+        gap: '1rem',
+        width: '100%',
+      }}
+    >
+      <div
         style={{
-          display: 'flex',
-          justifyContent: 'space-between',
+          minWidth: '10%',
         }}
       >
-        <div>Filters</div>
+        Filters
+      </div>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
         <div
           style={{
             display: 'flex',
             flexWrap: 'wrap',
-            justifyContent: 'end',
+            justifyContent: 'start',
             gap: '1rem',
-            width: '80%',
           }}
         >
           {inventory.map((item) => (
@@ -60,14 +66,13 @@ function Store() {
               id={item.id}
               title={item.title}
               price={item.price}
-              img={item.image}
-              inCart={false}
+              image={item.image}
             />
           ))}
         </div>
-      </section>
-    );
-  }
+      )}
+    </section>
+  );
 }
 
 export default Store;

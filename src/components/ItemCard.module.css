@@ -1,0 +1,65 @@
+.card {
+  width: 20%;
+  padding: 1rem;
+  background-color: white;
+  border: solid 1px var(--color-accent);
+  border-radius: var(--radius-rectangle);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 250ms ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 4px rgba(29, 30, 31, 0.04),
+    0 4px 4px -2px rgba(29, 30, 31, 0.12), 0 2px 12px 0 rgba(29, 30, 31, 0.08);
+}
+
+.img {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 0.9rem;
+}
+
+.actionBtns {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 1.5rem;
+}
+
+.addToCartBtn {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: var(--radius-circle);
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  cursor: pointer;
+}
+
+.quantityBtn {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border: none;
+  border-radius: var(--radius-circle);
+  padding: 0.5rem;
+  width: 35px;
+  aspect-ratio: 1/1;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantityLabel {
+  font-size: var(--font-small);
+}

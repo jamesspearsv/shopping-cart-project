@@ -19,3 +19,12 @@ Begin building store page, API function, and ItemCard.
 - Began basic structure and style of ItemCard.
 
 **Next Steps:** Continue building out store page and item cards. Add ability to add item to cart.
+
+## 8/20/2024
+
+Built out item cards and integrated cart functions
+
+- Implemented styling for item cards
+- Implemented ability to add to, remove from, and change quantity of items in cart
+
+**Next Steps:** Build out filtering ability for store page

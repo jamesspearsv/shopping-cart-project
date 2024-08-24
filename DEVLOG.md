@@ -38,3 +38,15 @@ Added total items in cart counter to cart button in navigation
 - Used useEffect to update total items count each time the cart was updated
 
 **Next Steps:** Build out filtering ability for store page
+
+## 8/24/2024
+
+Added filtering ability based on item categories
+
+- Built and styled category filters panel
+- Built and styled category selectors
+- Implemented state management for unique categories and active category
+- Implemented conditional rendering for items based on active category
+- Added loading animation to store page (credit: https://loading.io/css/)
+
+**Next Steps:** Build cart preview panel

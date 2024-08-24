@@ -9,11 +9,12 @@
 }
 
 .button span {
+  --items-badge-offset: -10px;
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: -8px;
-  margin-right: -8px;
+  margin-top: var(--items-badge-offset);
+  margin-right: var(--items-badge-offset);
   padding: 1px;
   background-color: red;
   color: var(--color-light);

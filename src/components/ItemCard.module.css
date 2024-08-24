@@ -1,6 +1,5 @@
 .card {
-  width: 20%;
-  min-width: 200px;
+  width: clamp(200px, 20px, 300px);
   padding: 1rem;
   background-color: white;
   border: solid 1px var(--color-accent);

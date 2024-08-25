@@ -1,9 +1,6 @@
-import { useOutletContext } from 'react-router-dom';
 import styles from './ItemCard.module.css';
 
-function ItemCard({ id, title, price, image, quantity }) {
-  const [cart, setCart] = useOutletContext();
-
+function ItemCard({ id, title, price, image, quantity, cart, setCart }) {
   // check if item is in cart
   const check = (element) => element.id === id;
 
@@ -24,6 +21,8 @@ function ItemCard({ id, title, price, image, quantity }) {
   }
 
   function incrementQuantity() {
+    console.log('increment');
+
     const updatedCart = [...cart];
 
     for (const item of updatedCart) {
@@ -36,6 +35,7 @@ function ItemCard({ id, title, price, image, quantity }) {
   }
 
   function decrementQuantity() {
+    console.log('decrement');
     const updatedCart = [...cart];
 
     for (const item of updatedCart) {
@@ -71,8 +71,13 @@ function ItemCard({ id, title, price, image, quantity }) {
       <div>{title}</div>
       <div className={styles.price}>
         ${price}
-        {quantity && <span>/ {quantity}</span>}
+        {quantity && <span> x{quantity}</span>}
       </div>
+      {quantity && (
+        <div className={styles.price}>
+          Total: ${Math.round(price * quantity * 100) / 100}
+        </div>
+      )}
       <div className={styles.actionBtns}>
         {cart.some(check) ? (
           <>

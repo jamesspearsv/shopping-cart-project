@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Basket } from '../assets/Basket';
 import styles from './CartButton.module.css';
 
-function CartButton({ cart }) {
+function CartButton({ cart, setCartOpen }) {
   const [itemsInCart, setItemsInCart] = useState();
 
   useEffect(() => {
@@ -15,8 +15,13 @@ function CartButton({ cart }) {
     return console.log('unmounted');
   }, [cart]);
 
+  function handleClick(e) {
+    e.preventDefault();
+    setCartOpen(true);
+  }
+
   return (
-    <button className={styles.button}>
+    <button className={styles.button} onClick={handleClick}>
       {Basket}
       {itemsInCart > 0 && <span>{itemsInCart}</span>}
     </button>

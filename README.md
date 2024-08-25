@@ -1,6 +1,14 @@
 # Shopping Cart Project
 
-This is my implementation of the [shopping cart project](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart) from the Odin Project's React course.
+This is my implementation of the [shopping cart project](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart) from the Odin Project's React course. This project has been completed according to the project requirements. But below are several areas that I could continue with this project.
+
+**Areas to contine**
+
+- Prop validation
+- General code commenting.
+- Extending mobile compatability
+- Adding an item details view
+- Building a dedicated cart page
 
 ## Built Using
 
@@ -11,47 +19,49 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
 
 ## To-Do
 
+This area is how I kept track of my project tasks. Items tht are ~stuckthrough~ were abandoned.
+
 ### Planning & Design
 
 - [x] Style Guide
   - [x] Color
   - [x] Type
   - [x] Spacing
-- [ ] Design Files
+- [x] Design Files
   - [x] Nav
   - [x] ItemCards
   - [x] CartPreview
   - [x] Store filters
-  - [ ] ItemDetails
+  - ~[ ] ItemDetails~
   - [x] Store Page
-  - [ ] Home Page
-  - [ ] Cart Page
+  - ~[ ] Home Page~
+  - ~[ ] Cart Page~
 
 ### Logic
 
-- [ ] Shopping Cart
-  - [ ] View items in cart
-  - [ ] Add items to cart
-  - [ ] Change quantity of item when in cart
-  - [ ] Remove items from cart
+- [x] Shopping Cart
+  - [x] View items in cart
+  - [x] Add items to cart
+  - [x] Change quantity of item when in cart
+  - [x] Remove items from cart
   - [x] Store cart in local storage
-- [ ] FakeStoreAPI Module
-  - [ ] Retrieve items from API
-  - [ ] Parse items from API
-- [ ] Store Filters
-  - [ ] Filter and limit items in store by category
+- [x] FakeStoreAPI Module
+  - [x] Retrieve items from API
+  - [x] Parse items from API
+- [x] Store Filters
+  - [x] Filter and limit items in store by category
 
 ### Pages / Routes
 
-- [ ] Home
-- [ ] Store
-- [ ] Cart
+- [x] Home
+- [x] Store
+- ~[ ] Cart~
 
 ### Components
 
-- [ ] ItemCard
-  - [ ] InStore -- should include, price, add to cart button
-  - [ ] InCart -- should display selected quantity in cart, buttons to increase of decrease quantity in cart
+- [x] ItemCard
+  - [x] InStore -- should include, price, add to cart button
+  - [x] InCart -- should display selected quantity in cart, buttons to increase of decrease quantity in cart
 - [x] NavBar
-- [ ] CartPreview
-- [ ] ItemDetails -- dialog box that should show item description, cost, category, and logic to select quantity and add to cart
+- [x] CartPreview
+- ~[ ] ItemDetails -- dialog box that should show item description, cost, category, and logic to select quantity and add to cart~

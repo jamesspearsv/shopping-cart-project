@@ -67,14 +67,6 @@
   }
 
   .mobileToggle {
-    height: 35px;
-    aspect-ratio: 1/1;
-    border: none;
-    border-radius: var(--radius-circle);
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    font-size: 1.1rem;
-    font-weight: light;
     transition: transform 100ms ease-in-out;
   }
 

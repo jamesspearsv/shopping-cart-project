@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.css';
 import CartButton from './CartButton.jsx';
+import Button from './Button.jsx';
 
-function Nav({ cart }) {
+function Nav({ cart, setCartOpen }) {
   const [scroll, setScroll] = useState(window.scrollY);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,29 +33,28 @@ function Nav({ cart }) {
   return (
     <nav className={scrolled ? `${styles.nav} ${styles.scrolled}` : styles.nav}>
       <div className={styles.mobileMenu}>
-        <button
-          onClick={handleMenuToggle}
+        <Button
+          content={'+'}
           className={styles.mobileToggle}
+          onClick={handleMenuToggle}
           style={menuOpen ? { transform: `rotate(45deg)` } : {}}
-        >
-          <div>+</div>
-        </button>
+        />
       </div>
       <div className={menuOpen ? `${styles.menu} ${styles.open}` : styles.menu}>
         <ul>
           <li>
-            <NavLink to="/" onClick={handleMenuToggle}>
+            <NavLink to='/' onClick={handleMenuToggle}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/store" onClick={handleMenuToggle}>
+            <NavLink to='/store' onClick={handleMenuToggle}>
               Store
             </NavLink>
           </li>
         </ul>
       </div>
-      <CartButton cart={cart} />
+      <CartButton cart={cart} setCartOpen={setCartOpen} />
     </nav>
   );
 }

@@ -28,8 +28,10 @@
 }
 
 .button svg {
+  --size: 1rem;
   color: var(--color-light);
-  transform: scale(1.2);
+  height: var(--size);
+  width: var(--size);
 }
 
 .desktop {

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import ItemCard from '../components/ItemCard';
 import styles from './Store.module.css';
+import ItemCard from '../components/ItemCard';
 import Category from '../components/Category';
+import { useOutletContext } from 'react-router-dom';
 
 let hasRun = false;
 
@@ -10,6 +11,8 @@ function Store() {
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
   const [activeCatetory, setActiveCategory] = useState('');
+
+  const [cart, setCart] = useOutletContext();
 
   useEffect(() => {
     // skip second mount in dev mode
@@ -59,6 +62,8 @@ function Store() {
         title={item.title}
         price={item.price}
         image={item.image}
+        cart={cart}
+        setCart={setCart}
       />
     );
   }
@@ -66,7 +71,7 @@ function Store() {
   return (
     <section className={styles.section}>
       <div className={styles.categoryPanel}>
-        <h2>Categories</h2>
+        <h3>Categories</h3>
         <button
           className={activeCatetory !== '' ? styles.visible : styles.hidden}
           onClick={resetFilters}

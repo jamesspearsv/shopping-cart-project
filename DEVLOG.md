@@ -8,7 +8,7 @@ Worked on implementing and finishing the mobile styles and function of the nav b
 - Styled cart preview buttons
 - Styled and implemented transition effect for mobile menu toggle button
 
-**Next Step:s** Begin implementing store page and API functions. Build itemCard component.
+**Next Steps:** Begin implementing store page and API functions. Build itemCard component.
 
 ## 8/20/2024
 
@@ -50,3 +50,11 @@ Added filtering ability based on item categories
 - Added loading animation to store page (credit: https://loading.io/css/)
 
 **Next Steps:** Build cart preview panel
+
+## 8/25/2024
+
+Built cart preview panel.
+
+- Added cart preview structure and style.
+- Refactored item cards to work in app outlet with react router and without.
+- Added content to home page.

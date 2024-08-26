@@ -19,7 +19,7 @@ This is my implementation of the [shopping cart project](https://www.theodinproj
 
 ## To-Do
 
-This area is how I kept track of my project tasks. Items tht are ~stuckthrough~ were abandoned.
+This area is how I kept track of my project tasks. Items tht are ~stuckthrough~ were abandoned but could be implemented later.
 
 ### Planning & Design
 
@@ -32,10 +32,10 @@ This area is how I kept track of my project tasks. Items tht are ~stuckthrough~ 
   - [x] ItemCards
   - [x] CartPreview
   - [x] Store filters
-  - ~[ ] ItemDetails~
+  - [ ] ~ItemDetails~
   - [x] Store Page
-  - ~[ ] Home Page~
-  - ~[ ] Cart Page~
+  - [ ] ~Home Page~
+  - [ ] ~Cart Page~
 
 ### Logic
 
@@ -55,7 +55,7 @@ This area is how I kept track of my project tasks. Items tht are ~stuckthrough~ 
 
 - [x] Home
 - [x] Store
-- ~[ ] Cart~
+- [ ] ~Cart~
 
 ### Components
 
@@ -64,4 +64,4 @@ This area is how I kept track of my project tasks. Items tht are ~stuckthrough~ 
   - [x] InCart -- should display selected quantity in cart, buttons to increase of decrease quantity in cart
 - [x] NavBar
 - [x] CartPreview
-- ~[ ] ItemDetails -- dialog box that should show item description, cost, category, and logic to select quantity and add to cart~
+- [ ] ~ItemDetails -- dialog box that should show item description, cost, category, and logic to select quantity and add to cart~
